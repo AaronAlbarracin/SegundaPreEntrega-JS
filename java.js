@@ -31,3 +31,29 @@ function cotizarSeguro() {
         alert("Tienes que completar todos los requerimientos")
     }
 }
+
+function solicitarPrestamo(){
+    function SolicitantesDePrestamos (nombre, apellido, edad, telefono, documento){
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.edad = edad;
+            this.telefono = telefono;
+            this.documento = documento;
+        }
+    var nombreSolicitante = document.getElementById("nombre").value;
+    var apellidoSolicitante = document.getElementById("apellido").value;
+    var edadSolicitante = document.getElementById("edad").value;
+    var numeroSolicitante = document.getElementById("numero").value;
+    var documentoSolicitante = document.getElementById("documento").value;
+
+    NuevoSolicitantePrestamo = new SolicitantesDePrestamos (nombreSolicitante, apellidoSolicitante, edadSolicitante, numeroSolicitante, documentoSolicitante);
+    console.log(NuevoSolicitantePrestamo)
+    posicionarListaEspera()
+}
+var baseDatos= [];
+function posicionarListaEspera(){
+    baseDatos.push(NuevoSolicitantePrestamo);
+    console.log(baseDatos)
+document.getElementById("tabla").innerHTML += '<tbody><td>'+NuevoSolicitantePrestamo.nombre+'</td><td>'+NuevoSolicitantePrestamo.apellido+'</td><td>'+NuevoSolicitantePrestamo.documento+'</td></tbody>';
+};
+

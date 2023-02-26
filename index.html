@@ -54,18 +54,32 @@
         <br><input class="enviar" type="button" value="Cotizar" onclick="cotizarSeguro()">
     </form><br><br>
 
-    <div class="Usuario">
-        <h2>Solicitud de prestamo</h2><br>
-        <h3>Ingrese sus datos</h3>
-        <form>
+    <div class="usuario">
+        <form class="formulario2">
+            <h2>Solicitud de Prestamo</h2>
+            <h3>Ingrese sus datos</h3><br>
             <input id="nombre" type="text" placeholder="Ingrese su nombre"><br>
             <input id="apellido" type="text" placeholder="Ingrese su apellido"><br>
-            <input id="edad" type="text" placeholder="Ingrese su edad"><br>
-            <input id="nombre" type="number" placeholder="Numero de contacto"><br>
-            <button id="boton" type="reset">Enviar</button>
-        </form>
+            <input id="edad" type="number" placeholder="Ingrese su edad"><br>
+            <input id="documento" type="number" placeholder="Numero de documento"><br>
+            <input id="numero" type="number" placeholder="Numero de contacto"><br>
+            <button id="boton" class="enviar" type="reset" onclick="solicitarPrestamo();">Enviar</button>
+        </form> <br><br>
     </div>
 
+    <div class="listaEspera">
+        <h2>Lista de Espera</h2>
+        <table id="tabla">
+            <thead>
+                <tr class="lista">
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Documento</th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
 
     <script src="java.js"></script>
 </body>

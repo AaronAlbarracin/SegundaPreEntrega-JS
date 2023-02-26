@@ -28,5 +28,48 @@ body .formulario {
   padding: 20px;
   padding-top: 5px;
 }
+body .formulario2 {
+  font-size: 20px;
+  outline: 2px solid rgba(144, 32, 144, 0.478);
+  background-color: rgb(191, 191, 191);
+  width: 450px;
+  margin: auto;
+  margin-top: 1em;
+  text-align: center;
+  padding: 20px;
+  padding-top: 5px;
+}
+body .formulario2 input, body .formulario2 textarea {
+  width: 100%;
+  padding: 7px;
+  font-size: 17px;
+}
+body .formulario2 textarea {
+  max-width: 100%;
+  max-height: 200px;
+  min-height: 100px;
+  min-width: 100%;
+}
+body .enviar {
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+body .listaEspera {
+  font-size: 20px;
+  outline: 2px solid rgba(144, 32, 144, 0.478);
+  background-color: rgb(191, 191, 191);
+  width: 450px;
+  margin: auto;
+  margin-top: 1em;
+  text-align: center;
+  padding: 20px;
+  padding-top: 5px;
+}
+body th {
+  text-align: start;
+  padding: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
