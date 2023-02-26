@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Segunda PreEntrega</title>
+</head>
+<body>
+    <div class="tabla">
+        <table border="1"
+            cellpadding="0"
+            cellspacing="0">
+        <thead>
+            <th>Cuotas </th>
+            <th>Porcentaje de Interes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3</td>
+                <td>20 %</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>30 %</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>45 %</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>55 %</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>70 %</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    <form class="formulario">
+        <h1>Simulación de Prestamos</h1><br><br>
+        <label>Dinero solicitado</label>
+        <input type="number" class="monto" id="monto" min="1000" max="50000"><br><br>
+        <label for="cuotas">Seleccionar cuotas</label><br>
+        <input type="radio" name="cambio" id="tres">Tres
+        <input type="radio" name="cambio" id="seis">Seis
+        <input type="radio" name="cambio" id="doce">Doce
+        <input type="radio" name="cambio" id="dieciocho">Dieciocho
+        <input type="radio" name="cambio" id="venticuatro">Venticuatro
+        <br><input class="enviar" type="button" value="Cotizar" onclick="cotizarSeguro()">
+    </form><br><br>
+
+    <div class="Usuario">
+        <h2>Solicitud de prestamo</h2><br>
+        <h3>Ingrese sus datos</h3>
+        <form>
+            <input id="nombre" type="text" placeholder="Ingrese su nombre"><br>
+            <input id="apellido" type="text" placeholder="Ingrese su apellido"><br>
+            <input id="edad" type="text" placeholder="Ingrese su edad"><br>
+            <input id="nombre" type="number" placeholder="Numero de contacto"><br>
+            <button id="boton" type="reset">Enviar</button>
+        </form>
+    </div>
+
+
+    <script src="java.js"></script>
+</body>
+</html>
